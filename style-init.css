@@ -1,0 +1,169 @@
+
+#container{
+        position:absolute;
+        top:5%;
+        left:5%;
+        width:90%;
+        height:90%;
+        border-radius:0.5rem;
+        box-shadow:1px 2px 25px rgb(255, 255, 255, 0.5);
+        background:linear-gradient(transparent,#f4f3ee, #f4f3ee);
+        backdrop-filter: blur(5px);
+        display:flex;
+        align-items:center;
+        justify-content:center; 
+
+}
+
+.inner-container{
+        position:relative;
+        width:70%;
+        height:80%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+}
+
+.inner-container p{
+        text-align:center;
+        text-indent:2em;
+        color:black;
+        margin-bottom:1rem;
+}
+
+h4 span{
+        color:#e0afa0;   
+        text-shadow: 4px 2px 3px #463f3a;
+}
+
+h4{
+        font-size:clamp(1.5rem, 6rem, 7rem);
+        line-height:1;
+        -webkit-text-stroke:0.3vw #e0afa0;
+        color:transparent;      
+}
+
+h4::before
+{
+  content:'Genesis';
+  position:absolute;
+  top:24%;
+  left:0.95rem;
+  width:0;
+  height:20%;
+  color:#e0afa0;
+  -webkit-text-stroke:0vw #e0afa0;
+  border-right:2px solid #e0afa0;
+  text-shadow: 3px 2px 3px #463f3a;
+  overflow:hidden;
+  animation:animate 5s linear infinite;
+}
+
+@keyframes animate{
+        0%,100%
+        {
+                width:0;
+        }
+         30%, 40%, 70%
+        {
+                width:47%;
+        }
+}
+
+.inner-container h2{
+        font-weight:100;
+        font-size:2rem;
+}
+
+.inner-container img{
+        width:15px;
+        height:15px;
+}
+
+@media (max-width:1318px){
+
+h4{
+-webkit-text-stroke:0vw;
+  color:transparent;      
+}
+    
+h4::before
+{
+  top:13%;
+  left:0;
+}
+
+}
+
+@media (min-width: 368px) and (max-width:1200px){
+
+#container3, #container4, #container5, #container6{
+            overflow-x:hidden;
+            overflow-y:auto;
+            scrollbar-color:#f4f3ee, #e0afa0;
+            scrollbar-width: auto;
+}
+    
+.study-container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+}
+     
+h4::before
+{
+  opacity:0;
+  
+}
+h4{
+  color:#e0afa0;
+  text-shadow: 3px 2px 3px #463f3a;
+}
+
+.inner-container p{
+        font-size:.8rem;
+        margin-bottom:.5rem;
+}
+
+.image-about{
+        left:0;
+        width:200px;
+        height:200px;
+}
+
+.about-description{ 
+        width: 70%;
+}
+
+.about-title h1{
+        font-size:4rem;
+}
+
+.contact-2{
+   width:80%;
+   height:80%;
+}
+
+.contact-box-left{
+        width:7rem;
+        height:7rem;     
+}
+
+.contact-box-right{
+
+        font-size:.6rem;
+}
+
+.contact-box-right #phone, .contact-box-right #phone2, .contact-box-right #email{
+        left:0;
+        font-size:.9rem;
+}
+
+.close-btn{
+        width:40px;
+        height:30px;
+}
+        
+}
